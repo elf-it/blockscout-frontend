@@ -1,0 +1,43 @@
+﻿:root {
+  --cryland-forest: #1c6e3b;
+  --cryland-leaf: #3aa76d;
+  --cryland-moss: #0f3a24;
+  --cryland-mist: #e6f6ec;
+  --cryland-ink: #0e1a13;
+}
+
+body {
+  font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+  color: var(--cryland-ink);
+}
+
+/* Accent tokens override (best-effort). Adjust once design tokens are known. */
+:root {
+  --color-primary: var(--cryland-leaf);
+  --color-primary-hover: #2f8f5e;
+  --color-primary-active: #27764d;
+  --color-accent: var(--cryland-forest);
+  --color-bg: #f5fbf7;
+  --color-bg-elevated: #ffffff;
+  --color-border: #cfe7d7;
+}
+
+.dark,
+[data-theme="dark"] {
+  --color-bg: #0b1410;
+  --color-bg-elevated: #111d16;
+  --color-border: #1e3227;
+  color: #e7f2ea;
+}
+
+/* Header branding sample */
+.cryland-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cryland-brand__logo {
+  width: 28px;
+  height: 28px;
+}

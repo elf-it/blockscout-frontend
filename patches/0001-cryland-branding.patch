@@ -1,0 +1,7 @@
+﻿*** Begin Patch
+*** Update File: src/pages/_app.tsx
+@@
+-import "../styles/globals.css";
++import "../styles/globals.css";
++import "../branding/cryland.css";
+*** End Patch
