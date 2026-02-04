@@ -3,6 +3,7 @@ FROM node:22-bullseye-slim AS deps
 WORKDIR /app
 RUN apt-get update && apt-get install -y git python3 make g++ && rm -rf /var/lib/apt/lists/*
 COPY package.json yarn.lock ./
+COPY tsconfig.json ./
 COPY toolkit ./toolkit
 COPY configs ./configs
 RUN yarn install --frozen-lockfile
