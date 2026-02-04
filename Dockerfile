@@ -4,6 +4,8 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git python3 make g++ && rm -rf /var/lib/apt/lists/*
 COPY package.json yarn.lock ./
 COPY tsconfig.json ./
+COPY lib ./lib
+COPY types ./types
 COPY toolkit ./toolkit
 COPY configs ./configs
 RUN yarn install --frozen-lockfile
