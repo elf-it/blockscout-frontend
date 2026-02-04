@@ -31,7 +31,7 @@ import Web3ModalProvider from 'ui/shared/Web3ModalProvider';
 import 'lib/setLocale';
 // import 'focus-visible/dist/focus-visible';
 import 'nextjs/global.css';
-import "../branding/cryland.css";
+import '../branding/cryland.css';
 
 type AppPropsWithLayout = AppProps & {
   Component: NextPageWithLayout;
